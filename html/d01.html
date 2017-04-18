@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<title>D01</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<h2 class="w3-center">Domain One</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/lsterzingerwrf/images/plt_Surface_d01.000001.png" style="width:100%">
+  <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/lsterzingerwrf/images/plt_Surface_d01.000002.png" style="width:100%">
+  <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/lsterzingerwrf/images/plt_Surface_d01.000003.png" style="width:100%">
+  <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/lsterzingerwrf/images/plt_Surface_d01.000004.png" style="width:100%">
+  <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/lsterzingerwrf/images/plt_Surface_d01.000005.png" style="width:100%">
+  <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/lsterzingerwrf/images/plt_Surface_d01.000006.png" style="width:100%">
+  <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/lsterzingerwrf/images/plt_Surface_d01.000007.png" style="width:100%">
+  <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/lsterzingerwrf/images/plt_Surface_d01.000008.png" style="width:100%">
+  <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/lsterzingerwrf/images/plt_Surface_d01.000009.png" style="width:100%">
+  <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/lsterzingerwrf/images/plt_Surface_d01.000010.png" style="width:100%">
+  <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/lsterzingerwrf/images/plt_Surface_d01.000011.png" style="width:100%">
+  <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/lsterzingerwrf/images/plt_Surface_d01.000012.png" style="width:100%">
+  <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/lsterzingerwrf/images/plt_Surface_d01.000013.png" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
+
